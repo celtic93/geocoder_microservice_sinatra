@@ -8,7 +8,7 @@ class GeocoderRoutes < Application
         lat, lon = coordinates
 
         status 200
-        json({ lat: lat, lon: lon })
+        json({ data: { lat: lat, lon: lon } })
       else
         status 422
         json({ errors: I18n.t(:not_found, scope: 'api.errors') })

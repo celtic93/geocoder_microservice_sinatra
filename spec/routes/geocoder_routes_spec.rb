@@ -26,7 +26,7 @@ RSpec.describe GeocoderRoutes, type: :routes do
       it 'returns coordinates' do
         get '/v1', params
 
-        expect(response_body).to a_hash_including(
+        expect(response_body['data']).to a_hash_including(
           'lat' => 55.7540471,
           'lon' => 37.620405
         )
