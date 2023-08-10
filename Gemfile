@@ -21,6 +21,7 @@ gem 'fast_jsonapi', '~> 1.5'
 
 gem 'bunny', '~> 2.15.0'
 
+gem 'amazing_print'
 gem 'rack-ougai', '~> 0.2.1'
 gem 'rack-request-id', '~> 0.0.4'
 
